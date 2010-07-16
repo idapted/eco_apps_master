@@ -1,0 +1,9 @@
+= Download
+
+Github: http://github.com/idapted/eco_apps_master
+
+Gem:
+  gem install eco_apps_master.gem
+
+== How does this work?
+  See http://github.com/idapted/eco_apps
