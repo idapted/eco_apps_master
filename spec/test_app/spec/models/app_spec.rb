@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), '../test_app/spec', 'spec_helper')
+require File.join(File.dirname(__FILE__), '../spec_helper')
 
 describe "app" do
   it "should set url to '/:app_name' if it's null" do

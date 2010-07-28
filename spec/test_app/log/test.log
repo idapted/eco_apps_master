@@ -289,3 +289,49 @@ Processing CoreServicesController#reset_config (for 0.0.0.0 at 2010-07-07 18:03:
   [4;36;1mApp Update (0.3ms)[0m   [0;1mUPDATE "apps" SET "updated_at" = '2010-07-07 10:03:06', "url" = 'http://www.test.com' WHERE "id" = 1[0m
 Completed in 69ms (View: 1, DB: 37) | 200 OK [http://test.host/core_services/reset_config?app%5Bname%5D=test&app%5Burl%5D=http%3A%2F%2Fwww.test.com]
   [4;35;1mApp Load (2.7ms)[0m   [0mSELECT * FROM "apps" LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mApp Create (31.3ms)[0m   [0;1mINSERT INTO "apps" ("name", "created_at", "updated_at", "url", "api", "database") VALUES('test', '2010-07-27 09:21:23', '2010-07-27 09:21:23', 'http://www.test.com', NULL, NULL)[0m
+  [4;35;1mApp Create (0.0ms)[0m   [0mINSERT INTO "apps" ("name", "created_at", "updated_at", "url", "api", "database") VALUES('test', '2010-07-27 09:21:23', '2010-07-27 09:21:23', '/test', NULL, NULL)[0m
+
+
+Processing CoreServicesController#reset_config (for 0.0.0.0 at 2010-07-27 17:21:23) [POST]
+  Parameters: {"app"=>{"name"=>"test", "url"=>"http://www.test.com"}}
+  [4;36;1mApp Load (9.0ms)[0m   [0;1mSELECT * FROM "apps" WHERE ("apps"."name" = 'test') LIMIT 1[0m
+  [4;35;1mApp Create (0.0ms)[0m   [0mINSERT INTO "apps" ("name", "created_at", "updated_at", "url", "api", "database") VALUES('test', '2010-07-27 09:21:24', '2010-07-27 09:21:24', '/test', NULL, NULL)[0m
+  [4;36;1mApp Update (0.0ms)[0m   [0;1mUPDATE "apps" SET "url" = 'http://www.test.com' WHERE "id" = 1[0m
+Completed in 65ms (View: 0, DB: 40) | 200 OK [http://test.host/core_services/reset_config?app%5Bname%5D=test&app%5Burl%5D=http%3A%2F%2Fwww.test.com]
+  [4;35;1mApp Load (0.0ms)[0m   [0mSELECT * FROM "apps" LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mApp Create (0.0ms)[0m   [0;1mINSERT INTO "apps" ("name", "created_at", "updated_at", "url", "api", "database") VALUES('test', '2010-07-27 09:23:51', '2010-07-27 09:23:51', 'http://www.test.com', NULL, NULL)[0m
+  [4;35;1mApp Create (0.0ms)[0m   [0mINSERT INTO "apps" ("name", "created_at", "updated_at", "url", "api", "database") VALUES('test', '2010-07-27 09:23:51', '2010-07-27 09:23:51', '/test', NULL, NULL)[0m
+
+
+Processing CoreServicesController#reset_config (for 0.0.0.0 at 2010-07-27 17:23:51) [POST]
+  Parameters: {"app"=>{"name"=>"test", "url"=>"http://www.test.com"}}
+  [4;36;1mApp Load (0.0ms)[0m   [0;1mSELECT * FROM "apps" WHERE ("apps"."name" = 'test') LIMIT 1[0m
+  [4;35;1mApp Create (0.5ms)[0m   [0mINSERT INTO "apps" ("name", "created_at", "updated_at", "url", "api", "database") VALUES('test', '2010-07-27 09:23:51', '2010-07-27 09:23:51', '/test', NULL, NULL)[0m
+  [4;36;1mApp Update (0.0ms)[0m   [0;1mUPDATE "apps" SET "updated_at" = '2010-07-27 09:23:51', "url" = 'http://www.test.com' WHERE "id" = 1[0m
+Completed in 90ms (View: 0, DB: 0) | 200 OK [http://test.host/core_services/reset_config?app%5Bname%5D=test&app%5Burl%5D=http%3A%2F%2Fwww.test.com]
+  [4;35;1mApp Load (0.0ms)[0m   [0mSELECT * FROM "apps" LIMIT 1[0m

@@ -8,5 +8,6 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
   config.gem 'eco_apps_master'
+  config.gem 'eco_apps'
   config.time_zone = 'UTC'
 end
