@@ -1,5 +1,3 @@
-require 'eco_apps'
-
 class CoreServicesController < ActionController::Base
   caches_action :show
   cache_sweeper :app_sweeper, :only => [:reset_config]
